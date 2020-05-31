@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="description" content="My first webpage, with image">
+      <meta name="keywords" content="mths, website">
+      <meta name="author" content="Hayden Bronson">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>5-06</title>
+    </head>
+    <body>
+        <p>Can you guess my age?</p>
+        <h1>Please put your guess below.</h1>
+        <br><br>
+        <input type="text" id="guessedage">
+        <button onclick="ageguess()">Guess Age</button>
+    <br><br>
+  <script>
+  function ageguess() {
+  let myage;
+  let guessedage;
+  guessedage = parseInt(document.getElementById("guessedage").value);
+  console.log(guessedage);
+  myage = 13
+  if (guessedage == myage)  {
+  alert ("You guessed my age!");
+  }
+  else if (myage < guessedage) {
+  alert ("You're guess is too high.");
+  }
+
+  else if (myage > guessedage) {
+  alert ("You're guess is too low.");
+  }
+  
+  else {
+  alert ("Invalid Property found.")
+  }
+  }
+  </script>
+    </body>
+</html>
